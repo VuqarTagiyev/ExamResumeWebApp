@@ -16,10 +16,7 @@
     </head>
 
     <%
-        if(request.getSession().getAttribute("admin") != null){
-            response.sendRedirect("admin_panel");
-            return;
-        }else if(request.getSession().getAttribute("loggedIn") != null && request.getSession().getAttribute("admin") == null){
+        if (request.getSession().getAttribute("loggedIn") != null) {
             response.sendRedirect("main");
             return;
         }

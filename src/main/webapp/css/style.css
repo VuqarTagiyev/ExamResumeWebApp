@@ -163,9 +163,15 @@ input[type=radio] {
   -webkit-appearance: radio !important;
   -o-appearance: radio !important;
   -ms-appearance: radio !important; }
+.img_avatar{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
 
 img {
   max-width: 100%;
+  
   height: auto; }
 
 figure {
@@ -187,7 +193,8 @@ h2 {
 
 .main {
   background: #f8f8f8;
-  padding: 150px 0; }
+  margin-top: 27px;
+}
 
 .clear {
   clear: both; }
@@ -250,7 +257,8 @@ body {
   -ms-transform: translate(-50%, -50%); }
 
 .signup {
-  margin-bottom: 150px; }
+  /*margin-bottom: 150px;*/ 
+}
 
 .signup-content {
   padding: 75px 0; }
@@ -590,3 +598,7 @@ label.valid {
     margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.container_avatar{
+    margin-left: 75%;
+}

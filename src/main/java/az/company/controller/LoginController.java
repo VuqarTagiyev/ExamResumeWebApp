@@ -30,8 +30,14 @@ public class LoginController extends HttpServlet {
         if (user == null) {
             response.sendRedirect("login");
         } else {
-            request.getSession().setAttribute("loggedIn", user);
-            response.sendRedirect("main");
+            if (user.getUserPosition().getId() == 4) {
+                request.getSession().setAttribute("loggedIn", user);
+                request.getSession().setAttribute("admin", user);
+                response.sendRedirect("admin_panel");
+            } else {
+                request.getSession().setAttribute("loggedIn", user);
+                response.sendRedirect("main");
+            }
         }
     }
 }

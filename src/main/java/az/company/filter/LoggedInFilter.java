@@ -22,29 +22,33 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebFilter(filterName = "LoggedIn", urlPatterns = "*")
 public class LoggedInFilter implements Filter {
-    
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("INIT");    
+        System.out.println("INIT");
     }
-    
+
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
-        if (req.getSession().getAttribute("loggedIn") == null 
-                && !req.getRequestURI().contains("/login") 
+        
+        boolean filter = (req.getSession().getAttribute("loggedIn") == null
+                && !req.getRequestURI().contains("/resources")
+                && !req.getRequestURI().contains("/login")
                 && !req.getRequestURI().contains("/sign_up")
-                && !req.getRequestURI().contains("/error")) {
+                && !req.getRequestURI().contains("/error"));
+        
+        if (filter) {
             res.sendRedirect("error");
         } else {
             chain.doFilter(request, response);
         }
     }
-    
+
     @Override
     public void destroy() {
-        System.out.println("Destroy");    
+        System.out.println("Destroy");
     }
-    
+
 }

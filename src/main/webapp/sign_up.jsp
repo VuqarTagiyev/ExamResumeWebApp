@@ -6,11 +6,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Qeydiyyat</title>
         <!-- Font Icon -->
-        <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="resources/fonts/material-icon/css/material-design-iconic-font.min.css">
 
         <!-- Main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="resources/css/style.css"/>
+        
+        
+        <script src="resources/js/main.js"></script>
     </head>
 </head>
 <body>
@@ -47,7 +49,7 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <figure><img src="resources/images/signup-image.jpg" alt="sing up image"></figure>
                         <a href="login" class="signup-image-link">Mənim artıq hesabım var!</a>
                     </div>
                 </div>

@@ -5,9 +5,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="resources/css/style.css">
         <title>JSP Page</title>
-        <script src="js/main.js"></script>
+        <script src="resources/js/main.js"></script>
     </head>
     <body>
 

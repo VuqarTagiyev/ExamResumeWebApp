@@ -5,10 +5,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>NOT Found</title>
-        <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="resources/fonts/material-icon/css/material-design-iconic-font.min.css">
 
         <!-- Main css -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="resources/css/style.css">
     </head>
     <body>
 
@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="signin-content">
                         <div class="signin-image">
-                            <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                            <figure><img src="resources/images/signin-image.jpg" alt="sing up image"></figure>
                         </div>
 
                         <div class="signin-form">

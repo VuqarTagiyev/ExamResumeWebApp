@@ -12,6 +12,7 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Исмаил
  */
+@WebFilter(filterName = "LoggedIn", urlPatterns = "*")
 public class LoggedInFilter implements Filter {
     
     @Override
@@ -34,7 +36,7 @@ public class LoggedInFilter implements Filter {
                 && !req.getRequestURI().contains("/login") 
                 && !req.getRequestURI().contains("/sign_up")
                 && !req.getRequestURI().contains("/error")) {
-            res.sendRedirect("login");
+            res.sendRedirect("error");
         } else {
             chain.doFilter(request, response);
         }

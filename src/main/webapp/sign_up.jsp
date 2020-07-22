@@ -10,6 +10,7 @@
 
         <!-- Main css -->
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
     </head>
 </head>
 <body>
@@ -34,14 +35,14 @@
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="repait_password" id="re_pass" placeholder="Şifrənin təkrarı"/>
+                                <input type="password" name="repait_password" id="re_pass" onkeyup="checkPass()" placeholder="Şifrənin təkrarı"/>
                             </div>
                             <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <input style="cursor: pointer" type="checkbox" name="agree-term" id="agree-term" class="agree-term" onclick="showPass()"/>
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>Her bir <a href="#" class="term-service">qayda</a> ilə razıyam</label>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Qeydiyyat"/>
                             </div>
                         </form>
                     </div>
